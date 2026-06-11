@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Bruno Zamorano Pontiggia – Network Administrator</title>
+<style>
+  :root {
+    --accent: #2563eb;
+    --accent2: #1e40af;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --bg: #f9fafb;
+    --card: #ffffff;
+    --border: #e5e7eb;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+  /* HERO */
+  header {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+    color: #fff;
+    padding: 56px 24px 48px;
+    text-align: center;
+  }
+  .avatar {
+    width: 110px; height: 110px; border-radius: 50%;
+    border: 4px solid rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.15);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 42px; margin: 0 auto 20px;
+  }
+  header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+  header p.role { font-size: 1.05rem; opacity: 0.85; margin-top: 4px; }
+  .contacts {
+    display: flex; flex-wrap: wrap; gap: 14px;
+    justify-content: center; margin-top: 22px;
+  }
+  .contacts a {
+    color: rgba(255,255,255,0.9); text-decoration: none;
+    font-size: 0.85rem; display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.12); padding: 6px 14px; border-radius: 20px;
+    transition: background 0.2s;
+  }
+  .contacts a:hover { background: rgba(255,255,255,0.25); }
+
+  /* LAYOUT */
+  .container { max-width: 960px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: 280px 1fr; gap: 28px; }
+  @media(max-width:720px){ .container { grid-template-columns: 1fr; } }
+
+  /* CARDS */
+  .card { background: var(--card); border-radius: 12px; padding: 24px; border: 1px solid var(--border); margin-bottom: 20px; }
+  .card h2 { font-size: 0.7rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid var(--border); }
+
+  /* SKILLS */
+  .skill-item { margin-bottom: 14px; }
+  .skill-name { font-size: 0.88rem; font-weight: 600; margin-bottom: 4px; }
+  .skill-desc { font-size: 0.8rem; color: var(--muted); }
+  .skill-bar { height: 4px; background: var(--border); border-radius: 4px; margin-top: 6px; }
+  .skill-bar span { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
+
+  /* EDUCATION / TRAINING */
+  .edu-item { margin-bottom: 14px; }
+  .edu-year { font-size: 0.75rem; color: var(--accent); font-weight: 600; }
+  .edu-title { font-size: 0.9rem; font-weight: 700; }
+  .edu-place { font-size: 0.8rem; color: var(--muted); }
+
+  /* EXPERIENCE */
+  .exp-item { margin-bottom: 24px; position: relative; padding-left: 18px; }
+  .exp-item::before { content:''; position:absolute; left:0; top:7px; width:8px; height:8px; border-radius:50%; background: var(--accent); }
+  .exp-item::after { content:''; position:absolute; left:3.5px; top:15px; width:1px; height: calc(100% + 2px); background: var(--border); }
+  .exp-item:last-child::after { display:none; }
+  .exp-company { font-size: 0.88rem; font-weight: 700; color: var(--accent); }
+  .exp-role { font-size: 1rem; font-weight: 700; }
+  .exp-dates { font-size: 0.78rem; color: var(--muted); margin: 2px 0 8px; }
+  .exp-desc { font-size: 0.85rem; color: #374151; }
+
+  /* HOBBIES */
+  .hobbies { display: flex; flex-wrap: wrap; gap: 8px; }
+  .hobby-tag { background: #eff6ff; color: var(--accent2); font-size: 0.8rem; font-weight: 600; padding: 5px 14px; border-radius: 20px; }
+
+  /* SUMMARY */
+  .summary { font-size: 0.9rem; color: #374151; line-height: 1.7; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="avatar">👤</div>
+  <h1>Bruno Zamorano Pontiggia</h1>
+  <p class="role">Network Administrator · Technical Infrastructure Specialist</p>
+  <div class="contacts">
+    <a href="mailto:bhzamorano@gmail.com">✉ bhzamorano@gmail.com</a>
+    <a href="tel:+4916328478336">📞 +49 163 2847836</a>
+    <a href="https://github.com/bponti" target="_blank">⌥ GitHub: @bponti</a>
+    <a href="https://shorturl.at/HLUwt" target="_blank">in LinkedIn</a>
+    <a href="https://calendly.com/bruno.zamorano" target="_blank">🗓 Calendly</a>
+    <a>📍 Pankow, Berlin</a>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- LEFT COLUMN -->
+  <aside>
+
+    <div class="card">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <div class="edu-year">2016</div>
+        <div class="edu-title">ITIL – Foundation</div>
+        <div class="edu-place">Talentis Chile · Santiago</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2010 – 2013</div>
+        <div class="edu-title">Networking Administrator</div>
+        <div class="edu-place">Instituto Profesional La Araucana · Santiago</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Certifications</h2>
+      <div class="edu-item">
+        <div class="edu-year">May 2019</div>
+        <div class="edu-title">CCNA 200-125</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">March 2019</div>
+        <div class="edu-title">HCNA H12-211</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">April 2019</div>
+        <div class="edu-title">Certified OpenStack Administrator (COA)</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Key Skills</h2>
+      <div class="skill-item">
+        <div class="skill-name">AWS Cloud Operations</div>
+        <div class="skill-desc">Exposure to distributed AWS environments, infrastructure stability, cloud operations support, and cost-awareness initiatives.</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">L2–L3 Technical Support</div>
+        <div class="skill-desc">Advanced troubleshooting, escalation handling, operational continuity, and incident resolution in enterprise environments.</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">Enterprise Networking (LAN/WAN)</div>
+        <div class="skill-desc">Strong understanding of networking protocols, connectivity troubleshooting, and multi-vendor infrastructure environments.</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">Root Cause Analysis</div>
+        <div class="skill-desc">Investigation of recurring incidents and identification of structural issues affecting system stability and scalability.</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">Infrastructure Troubleshooting</div>
+        <div class="skill-desc">Cross-system diagnostics across applications, infrastructure layers, integrations, and operational workflows.</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">ITIL Incident Management</div>
+        <div class="skill-desc">Structured incident handling, prioritization, escalation workflows, and operational process alignment using ITIL practices.</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">Scrum / Agile</div>
+        <div class="skill-desc">Collaborative delivery in cross-functional teams using iterative methodologies and sprint-based workflows.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Hobbies</h2>
+      <div class="hobbies">
+        <span class="hobby-tag">⚽ Football</span>
+        <span class="hobby-tag">🎸 Guitar</span>
+        <span class="hobby-tag">💻 Technology</span>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- RIGHT COLUMN -->
+  <main>
+
+    <div class="card">
+      <h2>About Me</h2>
+      <p class="summary">Technical Infrastructure Specialist with experience in enterprise networking, cloud operations, and digital commerce platforms. Background in L2–L3 support within distributed AWS environments and infrastructure-focused operations. Experienced collaborating with DevOps and SRE teams in Agile environments. Strong focus on root cause analysis, operational continuity, and infrastructure scalability. Applied ITIL and Scrum methodologies to support technical operations and cross-functional collaboration. Currently expanding expertise in cloud infrastructure, distributed systems, and solution-oriented architecture.</p>
+    </div>
+
+    <div class="card">
+      <h2>Experience</h2>
+
+      <div class="exp-item">
+        <div class="exp-company">Spryker</div>
+        <div class="exp-role">Senior Technical Support Specialist</div>
+        <div class="exp-dates">December 2019 – January 2026</div>
+        <div class="exp-desc">Worked during Spryker's early growth stage, contributing to the stabilization and maturation of technical support operations. Participated in the transition toward AWS-based cloud infrastructure, supporting scalability, reliability, and cloud cost awareness as PaaS. Main contributions included advanced L2–L3 troubleshooting across distributed AWS environments, collaboration with SRE and DevOps teams, root cause analysis within modular PHP architectures (Spryker Modularity), and support for onboarding formalization and internal knowledge-sharing programs focused on AWS certification.</div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-company">eKomi – The Feedback Company</div>
+        <div class="exp-role">Technical Account Manager</div>
+        <div class="exp-dates">February 2019 – December 2019</div>
+        <div class="exp-desc">Integrator and L2–L3 Support across all eKomi Spanish-speaking markets. Specialized support for verticals including Web Stores, B2B, Insurance, Banking and Industrial clients. Shortly after joining, received an internal award for best attention in integration and onboarding of large enterprise customers such as Allianz and AXA.</div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-company">AD Retail S.A.</div>
+        <div class="exp-role">Lead of Support and DevOps</div>
+        <div class="exp-dates">August 2017 – December 2018</div>
+        <div class="exp-desc">Worked in the e-business area ensuring digital product continuity using Scrum methodologies. Led quick fixes and deployments during high-demand events (CyberDay & CyberMonday in Chile) and guided operations toward constant results in business intelligence modeling.</div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-company">Ezentis S.A.</div>
+        <div class="exp-role">IT Trainer</div>
+        <div class="exp-dates">February 2017 – August 2017</div>
+        <div class="exp-desc">Responsible for training and certifying technical personnel in technologies including DTH, STB, xDSL, FTTx (Fiber Optic), and MMOO. Managed ongoing leveling programs in technology and labor ethics aligned with Chilean ISP standards.</div>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>
